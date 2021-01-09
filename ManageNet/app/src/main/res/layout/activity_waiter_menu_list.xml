@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    tools:context="com.Semaan.managenet.WaiterMenuListActivity"
+    app:umanoPanelHeight="60dp"
+    app:umanoShadowHeight="20dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/waiter_menu_tab_layout">
+
+        </android.support.design.widget.TabLayout>
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_margin="20dp"
+            android:id="@+id/waiter_menu_view_pager">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/waiter_menu_list_view_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal|center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Orders"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"/>
+        <ListView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/waiter_menu_list_view">
+
+        </ListView>
+        <Button
+            android:id="@+id/waiter_pay_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stretched_button"
+            android:text="Pay"
+            android:elevation="5dp"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:id="@+id/waiter_current_order_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:elevation="5dp"
+            android:textColor="#000000"
+            android:paddingHorizontal="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

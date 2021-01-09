@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Manage Net</string>
+    <string-array name="manager_report_choice">
+        <item>By day</item>
+        <item>By Month</item>
+        <item>By Year</item>
+    </string-array>
+    <string-array name="manager_main_screen_string_array">
+        <item>Users</item>
+        <item>Category</item>
+        <item>Menu</item>
+        <item>Table Number</item>
+        <item>View Report</item>
+    </string-array>
+
+</resources>
